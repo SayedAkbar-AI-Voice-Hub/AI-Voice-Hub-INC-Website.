@@ -84,7 +84,7 @@ const Navbar = ({ setView }: { setView: (v: string) => void }) => {
           <button onClick={handleHomeClick} className="hover:text-white transition-colors">Home</button>
           <a href="#benefits" onClick={(e) => { e.preventDefault(); setView('home'); setTimeout(() => document.getElementById('benefits')?.scrollIntoView({ behavior: 'smooth' }), 100); }} className="hover:text-white transition-colors">Benefits</a>
           <a href="#how-it-works" onClick={(e) => { e.preventDefault(); setView('home'); setTimeout(() => document.getElementById('how-it-works')?.scrollIntoView({ behavior: 'smooth' }), 100); }} className="hover:text-white transition-colors">How it Works</a>
-          <button onClick={() => setView('contact')} className="hover:text-white transition-colors">Contact</button>
+          <a href="/opt-in" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Contact</a>
         </div>
         <button
           className="bg-white text-black px-6 py-2 rounded-full text-sm font-bold hover:bg-purple-500 hover:text-white transition-all"
@@ -661,7 +661,7 @@ const Footer = ({ setView }: { setView: (v: string) => void }) => (
           <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Privacy Policy</a>
           <a href="/terms-and-conditions" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Terms & Conditions</a>
           <a href="/opt-in" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Get Started</a>
-          <button onClick={() => { setView('contact'); window.scrollTo(0,0); }} className="hover:text-white transition-colors">Contact Us</button>
+          <a href="/opt-in" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Contact Us</a>
         </div>
         <p className="text-gray-500 text-sm">© 2026 AI Voice Hub.</p>
       </div>
